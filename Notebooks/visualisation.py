@@ -26,8 +26,9 @@ clfLGB.fit(X_train, y_train)
 def main():
     st.title('Colon cancer survival')
     st.header('Predicting the probability of survival at two years after colon cancer diagnosis')
-    st.write('This tool is designed to help to predict the probability of survival at two years after colon cancer diagnosis. First, this tool will ask you for some details about the patient and the tumour. Then, it will use a Light Gradient Boosting Machine model to show the probability of survival, based on data about the probability of survival of similar patients in the past.')
+    st.write('This tool is designed to help to predict the probability of survival at two years after colon cancer diagnosis. First, this tool will ask you for some details about the patient and the tumour. Then, it will use a Light Gradient Boosting Machine model to show the probability of survival, based on data of similar patients in the past.')
     st.write('*************************************************************************************')
+    st.subheader('Please enter the data of the patient:')
     sex = st.radio('What is the gender of the patient?',('Male','Female'))
     if sex == 'Male':
         sex = 1
