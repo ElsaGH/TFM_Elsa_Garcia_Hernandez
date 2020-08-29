@@ -22,7 +22,7 @@ README.TXT
 Simulacrum-data-dictionary_TFM.xlsx
 CPRD Cancer Registration Dictionary Set 17 up to 2016 v8.1
 NHS codes.pdf
-- This is the data dictionary of the database, as well as two other sources which contain further information about the classification of some variables
+- This is the data dictionary of the database, as well as two other sources which contain further information about the coding of some variables
 
 sim_av_tumour.csv
 sim_av_patient.csv
