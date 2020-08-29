@@ -14,84 +14,54 @@ Health England Office for Data Release <ODR@phe.gov.uk>.
 To minimise the potential for confusion with real data, organisational codes in
 this extract have been obfuscated.
 
-This package contains files to create all the empty table structures (tested on
-Oracle 11g), CSV and SQL to populate the lookup tables, the simulated data in
-CSV format, Oracle SQLLDR CTL files to import it, and additional documentation:
+This package contains the following additional files:
 
 README.TXT
 - This file
 
-create_table_sim_av_patient.sql
-create_table_sim_av_tumour.sql
-- SQL to create tables SIM_AV_PATIENT and SIM_AV_TUMOUR 
-create_tables_sim_sact.sql
-- SQL to create tables SIM_SACT_CYCLE, SIM_SACT_DRUG_DETAIL, SIM_SACT_OUTCOME,
-  SIM_SACT_PATIENT, SIM_SACT_REGIMEN and SIM_SACT_TUMOUR
-create_tables_zlookups.sql
-- SQL to create tables ZACE27SCORE, ZALLRED, ZBASIS, ZBEHAVIOUR,
-  ZCANCERCAREPLANINTENT, ZCNSLOCATION, ZDEATHLOCATION, ZDIAGNOSTICROUTE,
-  ZETHNICITY, ZGRADE, ZHISTOLOGYLOOKUP, ZICD, ZICDCLASSIFICATION, ZLATERALITY,
-  ZSEX, ZSTAGE, ZTNMEDITION, ZVITALSTATUS, ZYESNOUNKNOWN
-
-insert_lookups_zace27score.sql
-insert_lookups_zallred.sql
-insert_lookups_zbasis.sql
-insert_lookups_zbehaviour.sql
-insert_lookups_zcancercareplanintent.sql
-insert_lookups_zcnslocation.sql
-insert_lookups_zdeathlocation.sql
-insert_lookups_zdiagnosticroute.sql
-insert_lookups_zethnicity.sql
-insert_lookups_zgrade.sql
-insert_lookups_zhistologylookup.sql
-insert_lookups_zicd.sql
-insert_lookups_zicdclassification.sql
-insert_lookups_zlaterality.sql
-insert_lookups_zsex.sql
-insert_lookups_zstage.sql
-insert_lookups_ztnmedition.sql
-insert_lookups_zvitalstatus.sql
-insert_lookups_zyesnounknown.sql
-- Lookup table contents, as SQL INSERTs
-
-sim_av_tumour.ctl
-sim_av_patient.ctl
-sim_sact_cycle.ctl
-sim_sact_drug_detail.ctl
-sim_sact_outcome.ctl
-sim_sact_patient.ctl
-sim_sact_regimen.ctl
-sim_sact_tumour.ctl
-- Simulated cancer registration and SACT data for 2013-2015, as Oracle SQLLDR
-  ctl files, including import scripts.
-
-insert_lookups_zace27score.csv
-insert_lookups_zallred.csv
-insert_lookups_zbasis.csv
-insert_lookups_zbehaviour.csv
-insert_lookups_zcancercareplanintent.csv
-insert_lookups_zcnslocation.csv
-insert_lookups_zdeathlocation.csv
-insert_lookups_zdiagnosticroute.csv
-insert_lookups_zethnicity.csv
-insert_lookups_zgrade.csv
-insert_lookups_zhistologylookup.csv
-insert_lookups_zicd.csv
-insert_lookups_zicdclassification.csv
-insert_lookups_zlaterality.csv
-insert_lookups_zsex.csv
-insert_lookups_zstage.csv
-insert_lookups_ztnmedition.csv
-insert_lookups_zvitalstatus.csv
-insert_lookups_zyesnounknown.csv
-- Lookup table contents, as SQL files
+Simulacrum-data-dictionary_TFM.xlsx
+CPRD Cancer Registration Dictionary Set 17 up to 2016 v8.1
+NHS codes.pdf
+- This is the data dictionary of the database, as well as two other sources which contain further information about the classification of some variables
 
 sim_av_tumour.csv
 sim_av_patient.csv
-sim_sact_cycle.csv
-sim_sact_drug_detail.csv
-sim_sact_outcome.csv
 sim_sact_patient.csv
 sim_sact_regimen.csv
 sim_sact_tumour.csv
-- Simulated cancer registration and SACT data for 2013-2015, as CSV files
+- Simulated cancer registration and SACT data for 2013-2015, as CSV files. Of note, the tables sim_sact_cycle, sim_sact_drug_details and sim_sact_outome that were part of the data downloaded from the source have not been included in this folder since these were not used for this project.
+
+Within the lookup_tables.zip folder:
+    create_table_sim_av_patient.sql
+    create_table_sim_av_tumour.sql
+    - SQL to create tables SIM_AV_PATIENT and SIM_AV_TUMOUR 
+    create_tables_sim_sact.sql
+    - SQL to create tables SIM_SACT_CYCLE, SIM_SACT_DRUG_DETAIL, SIM_SACT_OUTCOME,
+      SIM_SACT_PATIENT, SIM_SACT_REGIMEN and SIM_SACT_TUMOUR
+    create_tables_zlookups.sql
+    - SQL to create tables ZACE27SCORE, ZALLRED, ZBASIS, ZBEHAVIOUR,
+      ZCANCERCAREPLANINTENT, ZCNSLOCATION, ZDEATHLOCATION, ZDIAGNOSTICROUTE,
+      ZETHNICITY, ZGRADE, ZHISTOLOGYLOOKUP, ZICD, ZICDCLASSIFICATION, ZLATERALITY,
+      ZSEX, ZSTAGE, ZTNMEDITION, ZVITALSTATUS, ZYESNOUNKNOWN
+    insert_lookups_zace27score.sql
+    insert_lookups_zallred.sql
+    insert_lookups_zbasis.sql
+    insert_lookups_zbehaviour.sql
+    insert_lookups_zcancercareplanintent.sql
+    insert_lookups_zcnslocation.sql
+    insert_lookups_zdeathlocation.sql
+    insert_lookups_zdiagnosticroute.sql
+    insert_lookups_zethnicity.sql
+    insert_lookups_zgrade.sql
+    insert_lookups_zhistologylookup.sql
+    insert_lookups_zicd.sql
+    insert_lookups_zicdclassification.sql
+    insert_lookups_zlaterality.sql
+    insert_lookups_zsex.sql
+    insert_lookups_zstage.sql
+    insert_lookups_ztnmedition.sql
+    insert_lookups_zvitalstatus.sql
+    insert_lookups_zyesnounknown.sql
+    - Lookup table contents, as SQL INSERTs
+
+
