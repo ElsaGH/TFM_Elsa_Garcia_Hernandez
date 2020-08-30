@@ -9,4 +9,4 @@ After reading the memory, please go to the folder "Data". In this folder you wil
 
 In order to execute the project, please go to the folder "Notebooks". You will find eight notebooks there, which need to be executed in order. The notebooks 1 to 6 contain the data preparation and cleaning steps. The notebook 7 contains the analysis and training of the machine learning model. Finally, the noteboook 8 contains the necessary information to execute the visualisation.py file, which will redirect the user to the visualisation of the project.
 
-The project was conducted using Jupyter Notebooks and Python version 3.7.4 in a virtual environment that was accessed through Ubuntu (version 18.04.3). All the libraries that are necessary to execute the project are indicated at the beginning of each notebook.
+The project was conducted using Jupyter Notebooks and Python (version 3.7.4) in a virtual environment that was accessed through Ubuntu (version 18.04.3). All the libraries that are necessary to execute the project are indicated at the beginning of each notebook.
